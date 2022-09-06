@@ -19,7 +19,7 @@ C'est cette alimentation qui sera chargée de fournir l'énergie à l'ensemble d
 
 # Driver A4988
 
-<img src="[https://www.framboise314.fr/wp-content/uploads/2022/09/Arduino_nano_PECO_08.jpg](https://www.framboise314.fr/wp-content/uploads/2022/09/Arduino_nano_PECO_15.jpg)">
+<img src="https://www.framboise314.fr/wp-content/uploads/2022/09/Arduino_nano_PECO_15.jpg">
 Le driver A4988 va se charger de piloter le déplacement du moteur pas à pas. 3 entrées permettent de programmer le nombre de pas par tour. Il s'alimente en 5v pour la partie logique et ici en 12 volts pour la commande du moteur. Il coûte environ 2€ frais de port compris.
 
 
