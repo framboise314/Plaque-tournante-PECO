@@ -9,7 +9,7 @@ Au démarrage l’Arduino Nano fait tourner un programme de test qui fait cligno
 
 L'Arduino Nano est sur le port COM9. Réglez le type de carte et le port dans le menu Outils. Téléverser un programme vide, le clignotement de la LED s'arrête.
 
-Composants
+#titre Composants
 
 Après une réflexion et une comparaison entre différents modèles d’Arduino et le Raspberry Pi PICO, j’ai opté pour un Arduino Nano qui dispose du nombre d’Entrées/Sorties suffisant. Voici les composants mis en œuvre dans ce montage. Ils proviennent de chez Amazon et Aliexpress (les liens sont pour certains des liens affiliés). Les prix peuvent varier en fonction du cours du dollar.
 
