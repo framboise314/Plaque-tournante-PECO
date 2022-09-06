@@ -14,7 +14,7 @@ Composants
 Après une réflexion et une comparaison entre différents modèles d’Arduino et le Raspberry Pi PICO, j’ai opté pour un Arduino Nano qui dispose du nombre d’Entrées/Sorties suffisant. Voici les composants mis en œuvre dans ce montage. Ils proviennent de chez Amazon et Aliexpress (les liens sont pour certains des liens affiliés). Les prix peuvent varier en fonction du cours du dollar.
 
 Alimentation à découpage
-![Alimentation à découpage]([http://url/to/img.png](https://www.framboise314.fr/wp-content/uploads/2022/09/Arduino_nano_PECO_08.jpg))
+https://www.framboise314.fr/wp-content/uploads/2022/09/Arduino_nano_PECO_08.jpg
 
 C'est cette alimentation qui sera chargée de fournir l'énergie à l'ensemble du montage. Le moteur consomme au maxi 1A/phase, on ajoute l'Arduino, les LEDs... soit quelques dizaines de mA. J'ai donc opté pour une alimentation 12v capable de fournir 2A. Elle est vendue une dizaine d'euros. L'alimentation possède un potentiomètre de réglage, il faudra vérifier que la tension de sortie est bien réglée à 12V.
 
