@@ -1,3 +1,4 @@
+# Gestion de plaque tournante PECO avec un Arduino Nano
 La plaque tournante PECO est livrée sans motorisation. L’idée est de motoriser et d’automatiser les déplacements de la plaque. Pour permettre à chacun d’adapter le montage à sa situation, j’ai choisi de mémoriser dans l’EEPROM de l’Arduino la position de chacune des voies, puis de gérer les déplacements de la plaque en fonction des emplacements mémorisés.
 
 Gestion de plaque tournante PECO avec un Arduino Nano
