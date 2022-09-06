@@ -9,7 +9,7 @@ Au démarrage l’Arduino Nano fait tourner un programme de test qui fait cligno
 
 L'Arduino Nano est sur le port COM9. Réglez le type de carte et le port dans le menu Outils. Téléverser un programme vide, le clignotement de la LED s'arrête.
 
-_Composants_
+# Composants
 
 Après une réflexion et une comparaison entre différents modèles d’Arduino et le Raspberry Pi PICO, j’ai opté pour un Arduino Nano qui dispose du nombre d’Entrées/Sorties suffisant. Voici les composants mis en œuvre dans ce montage. Ils proviennent de chez Amazon et Aliexpress (les liens sont pour certains des liens affiliés). Les prix peuvent varier en fonction du cours du dollar.
 
@@ -17,14 +17,15 @@ Alimentation à découpage
 <img src="https://www.framboise314.fr/wp-content/uploads/2022/09/Arduino_nano_PECO_08.jpg">
 C'est cette alimentation qui sera chargée de fournir l'énergie à l'ensemble du montage. Le moteur consomme au maxi 1A/phase, on ajoute l'Arduino, les LEDs... soit quelques dizaines de mA. J'ai donc opté pour une alimentation 12v capable de fournir 2A. Elle est vendue une dizaine d'euros. L'alimentation possède un potentiomètre de réglage, il faudra vérifier que la tension de sortie est bien réglée à 12V.
 
-#Driver A4988
+# Driver A4988
 
+<img src="[https://www.framboise314.fr/wp-content/uploads/2022/09/Arduino_nano_PECO_08.jpg](https://www.framboise314.fr/wp-content/uploads/2022/09/Arduino_nano_PECO_15.jpg)">
 Le driver A4988 va se charger de piloter le déplacement du moteur pas à pas. 3 entrées permettent de programmer le nombre de pas par tour. Il s'alimente en 5v pour la partie logique et ici en 12 volts pour la commande du moteur. Il coûte environ 2€ frais de port compris.
 
 
 
 
-DIP Switch x4
+# DIP Switch x4
 
 Le DIP switch ce sont simplement 4 petits interrupteurs à glissière. J'en utilise 3 pour paramétrer le nombre de pas du A4988 ci-dessus, il en reste un qui sert à passer de mode programme à mode normal. On peut utiliser ce genre d'interrupteur car on n'y accède que rarement. Ce genre d'interrupteur est vendu ~8€ pour 10 pièces.
 
