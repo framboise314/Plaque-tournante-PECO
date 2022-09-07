@@ -23,30 +23,25 @@ C'est cette alimentation qui sera chargée de fournir l'énergie à l'ensemble d
 <img src="https://www.framboise314.fr/wp-content/uploads/2022/09/Arduino_nano_PECO_15.jpg">
 Le driver A4988 va se charger de piloter le déplacement du moteur pas à pas. 3 entrées permettent de programmer le nombre de pas par tour. Il s'alimente en 5v pour la partie logique et ici en 12 volts pour la commande du moteur. Il coûte environ 2€ frais de port compris.
 
-
-
-
 ## DIP Switch x4
 <img src="https://www.framboise314.fr/wp-content/uploads/2022/09/Arduino_nano_PECO_06.jpg">
 
 Le DIP switch ce sont simplement 4 petits interrupteurs à glissière. J'en utilise 3 pour paramétrer le nombre de pas du A4988 ci-dessus, il en reste un qui sert à passer de mode programme à mode normal. On peut utiliser ce genre d'interrupteur car on n'y accède que rarement. Ce genre d'interrupteur est vendu ~8€ pour 10 pièces.
 
 ##  Carte prototype et borniers à vis
-
+<img src="https://www.framboise314.fr/wp-content/uploads/2022/09/Arduino_nano_PECO_05.jpg">
 Pour monter le A4988 et le DIP switch, j'ai opté pour une carte prototype de 7x3 cm. Ça ne valait pas le coup pour un montage unitaire de développer une carte de circuit imprimé (PCB) dédiée. J'ai trouvé un lot de cartes prototypes de diverses dimensions qui me serviront pour d'autres montages, mais vous pouvez trouver ce genre de cartes en plus petites quantités. Le lot de cartes prototypes avec les borniers à vis est vendu 20€.
 
 ## Alimentation 5 volts
-
+<img src="https://www.framboise314.fr/wp-content/uploads/2022/09/Arduino_nano_PECO_14.jpg">
 Pour alimenter l'Arduino Nano et la logique du A4988 j'ai opté pour ce modèle d'alimentation à découpage à base de LM2596. Il dispose d'un potentiomètre 10 tours pour un réglage fin de la tension de sortie. Vous règlerez la tension de sortie à 5,1v avant de connecter quoi que ce soit à cette alimentation. Je les ai trouvés à 12€ les 6 modules. Il y a du rab mais ça sert toujours ce genre de petite alim à découpage.
 
 ## Arduino Nano avec bornier à vis
-
+<img src="https://www.framboise314.fr/wp-content/uploads/2022/09/Arduino_nano_PECO_16.jpg">
 Pour l'Arduino Nano, vu le nombre de connexions à prévoir, je ne voulais pas me lancer sur du câblage soudé sur une carte prototype. Il existe des borniers à vis qui simplifient le câblage, tout en le sécurisant. De plus les noms des E/S sot rappelés devant chaque borne à vis, ce qui réduit le risque d'erreurs. On trouve l'ensemble autour de 7 euros.
 
-
-
 ## Moteur pas à pas NEMA17
-
+<img src="https://www.framboise314.fr/wp-content/uploads/2022/09/Arduino_nano_PECO_09.jpg">
 Le moteur NEMA17 est un classique, il comporte 2 bobines et consomme 1A par phase. C'est le modèle "galette" peu épais et avec un couple réduit mais largement suffisant pour faire tourner la plaque tournante PECO même avec moins de 1A sur chaque bobine. On le trouve pour 13€ environ.
 
 ## Fourchette optique
