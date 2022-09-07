@@ -168,6 +168,7 @@ En mode NORMAL, le moteur fait sa prise de ZERO (indiqué R.A.Z. sur l'écran) e
 J'ai essayé de commenter au maximum le programme pour le rendre compréhensible. Après ce n'est pas un programme de développeur. C'est un programme de maker. Il fait ce pour quoi il est écrit, mais n'est certainement ni optimisé, ni parfait. J'accepterai toutes les critiques, à condition que celui qui critique... améliore le programme en fonction de ses remarque, et le remette à disposition de la communauté :-D
 <img src="https://www.framboise314.fr/wp-content/uploads/2022/09/Arduino_nano_PECO_36.jpg">
 Le programme est disponible sur Github et vous pouvez le télécharger librement. Je n'ai pas encore le plateau et il y aura à coup sûr des modifications qui seront mises en ligne au fur et à mesure.
+
 Exemple de fonction : Allumer une LED
 // Allume LED BP
 //==============
