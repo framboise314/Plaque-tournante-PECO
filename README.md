@@ -169,7 +169,8 @@ J'ai essayé de commenter au maximum le programme pour le rendre compréhensible
 <img src="https://www.framboise314.fr/wp-content/uploads/2022/09/Arduino_nano_PECO_36.jpg">
 Le programme est disponible sur Github et vous pouvez le télécharger librement. Je n'ai pas encore le plateau et il y aura à coup sûr des modifications qui seront mises en ligne au fur et à mesure.
 
-Exemple de fonction : Allumer une LED
+## Exemple de fonction : Allumer une LED
+```
 // Allume LED BP
 //==============
 // Allume la LED correspondant à un BP appuyé
@@ -187,10 +188,12 @@ void allume_LED_BP(int bp) {
         digitalWrite(LED_VOIE4, HIGH);
     }
 }
+```
 
 Cette fonction allume la LED correspondant à un bouton poussoir appuyé. Elle ne retourne aucune valeur et reçoit en entrée le numéro du BP appuyé. Le programme allume la LED correspondante en fonction du BP.
+
+## Exemple de fonction : Avancer d'un pas
 ```
-Exemple de fonction : Avancer d'un pas
 // Fonction pour faire avancer le moteur pas à pas d'un pas
 // ========================================================
 int unPas(int v, String direction) {
