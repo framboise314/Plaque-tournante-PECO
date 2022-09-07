@@ -189,7 +189,7 @@ void allume_LED_BP(int bp) {
 }
 
 Cette fonction allume la LED correspondant à un bouton poussoir appuyé. Elle ne retourne aucune valeur et reçoit en entrée le numéro du BP appuyé. Le programme allume la LED correspondante en fonction du BP.
-
+'''
 Exemple de fonction : Avancer d'un pas
 // Fonction pour faire avancer le moteur pas à pas d'un pas
 // ========================================================
@@ -207,6 +207,7 @@ int unPas(int v, String direction) {
   digitalWrite(stepPin, LOW);
   delayMicroseconds(v);
 }
+'''
 
 Cette fonction fait avancer le moteur pas à pas d'un pas. Elle reçoit en paramètre v qui est une durée en microsecondes. Ce temps appliqué à la durée du pulse STEP en fin de fonction donne la vitesse de rotation. Plus la durée est longue, moins le moteur tourne vite. En fonction du paramètre direction qui est une chaîne de caractères (CW ou CCW : sens horaire ou anti-horaire) la fonction positionne la sortie dirPin pour commander la direction de déplacement.
 Enfin la fonction incrémente ou décrémente le compteur de position (une variable globale) qui permet au programme de toujours savoir où se trouve le plateau.
