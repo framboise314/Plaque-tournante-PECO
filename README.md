@@ -166,5 +166,52 @@ En mode PROGRAM on cale la position du plateau avec l'inverseur D/G. Pour affine
 En mode NORMAL, le moteur fait sa prise de ZERO (indiqué R.A.Z. sur l'écran) et va se positionner sur la voie 1. Le BP 1/2T permet de faire un demi tour pour retourner la locomotive, les boutons V1 à V4 envoient le plateau sur la voie correspondante. Le plateau ne coupe pas le faisceau IR de la fourchette pour éviter d'enrouler (casser ?) le fil qui alimente les rails du plateau. Si le faisceau est coupé le programme s'arrête et l'écran affiche ERREUR.
 
 J'ai essayé de commenter au maximum le programme pour le rendre compréhensible. Après ce n'est pas un programme de développeur. C'est un programme de maker. Il fait ce pour quoi il est écrit, mais n'est certainement ni optimisé, ni parfait. J'accepterai toutes les critiques, à condition que celui qui critique... améliore le programme en fonction de ses remarque, et le remette à disposition de la communauté :-D
-
+<img src="https://www.framboise314.fr/wp-content/uploads/2022/09/Arduino_nano_PECO_36.jpg">
 Le programme est disponible sur Github et vous pouvez le télécharger librement. Je n'ai pas encore le plateau et il y aura à coup sûr des modifications qui seront mises en ligne au fur et à mesure.
+Exemple de fonction : Allumer une LED
+// Allume LED BP
+//==============
+// Allume la LED correspondant à un BP appuyé
+void allume_LED_BP(int bp) {
+    if (bp == 1) {
+        digitalWrite(LED_1_2_T, HIGH);
+    }
+    if (bp == 2) {
+        digitalWrite(LED_VOIE1, HIGH);
+    } if (bp == 3) {
+        digitalWrite(LED_VOIE2, HIGH);
+    } if (bp == 4) {
+        digitalWrite(LED_VOIE3, HIGH);
+    } if (bp == 5) {
+        digitalWrite(LED_VOIE4, HIGH);
+    }
+}
+
+Cette fonction allume la LED correspondant à un bouton poussoir appuyé. Elle ne retourne aucune valeur et reçoit en entrée le numéro du BP appuyé. Le programme allume la LED correspondante en fonction du BP.
+
+Exemple de fonction : Avancer d'un pas
+// Fonction pour faire avancer le moteur pas à pas d'un pas
+// ========================================================
+int unPas(int v, String direction) {
+  if (direction == "CW") {
+    digitalWrite(dirPin, HIGH);
+    position += 1;
+  }
+  if (direction == "CCW") {
+    digitalWrite(dirPin, LOW);
+    position -= 1;
+  }
+  digitalWrite(stepPin, HIGH);
+  delayMicroseconds(v);
+  digitalWrite(stepPin, LOW);
+  delayMicroseconds(v);
+}
+
+Cette fonction fait avancer le moteur pas à pas d'un pas. Elle reçoit en paramètre v qui est une durée en microsecondes. Ce temps appliqué à la durée du pulse STEP en fin de fonction donne la vitesse de rotation. Plus la durée est longue, moins le moteur tourne vite. En fonction du paramètre direction qui est une chaîne de caractères (CW ou CCW : sens horaire ou anti-horaire) la fonction positionne la sortie dirPin pour commander la direction de déplacement.
+Enfin la fonction incrémente ou décrémente le compteur de position (une variable globale) qui permet au programme de toujours savoir où se trouve le plateau.
+
+
+L'ensemble du programme est construit avec cette idée d'utiliser des fonctions simples. J'ai essayé de commenter au mieux pour faciliter la compréhension.
+# Vidéo
+[![Vidéo youtube du fonctionnement du programme PECO](https://www.framboise314.fr/wp-content/uploads/2022/09/PECO.jpg)](https://youtu.be/_VmN7lMjtg8)
+
