@@ -214,4 +214,4 @@ Enfin la fonction incrémente ou décrémente le compteur de position (une varia
 L'ensemble du programme est construit avec cette idée d'utiliser des fonctions simples. J'ai essayé de commenter au mieux pour faciliter la compréhension.
 # Vidéo
 [![Vidéo youtube du fonctionnement du programme PECO](https://www.framboise314.fr/wp-content/uploads/2022/09/PECO.jpg)](https://youtu.be/_VmN7lMjtg8)
-
+Vidéo de présentation du programme PECO, exemple de programmation et de fonctionnement normal.
